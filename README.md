@@ -7,7 +7,7 @@
 - Log in to GitHub using your GitHub credentials and authorize gissues.com to manipulate issues in your public github repositories (using OAuth).
 - Choose a repository from the drop-down, then drag & drop your issues across columns in the scrumboard or reorder them within a given column.
 - Filter by issue labels, login of the assignee, or login of people mentioned in the issue history.
-- The URL in the address bar of the browser is your permalink to the very query you constructed. Sharing that URL allows others to view the very same issues as long as they have adequate GitHub permissions (the URL does not capture your authorization information)
+- The URL in the address bar of the browser is your permalink to the very query you constructed. Sharing that URL allows others to view the same issues as you, as long as they have adequate GitHub permissions (the URL does not capture your authorization information)
 
 **What you should know about**
 
