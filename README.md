@@ -28,6 +28,17 @@
 - If you like the experience provided by gissues, please share it with others.
 - You can use the Twitter button, Facebook button, or Google +1 button provided for your convenience in the application in the Recommend drop-down menu.
 
+**Run your own installation of the app**
+
+If you want to run your own installation of the app similar to [http://gissues.com](http://gissues.com), you will need to:
+
+- register the URL of you application as an OAuth application with GitHub [here](https://github.com/account/applications/new),  
+- modify the src/config.json file with the client_id and client_secret value provided for your application by GitHub. 
+
+**Contributions**
+
+I do welcome contributions via pull requests. Thank you for making gissues.com better.
+
 **Acknowledgements**
 
 Special thanks to Starbucks coffee and Tully's coffee for coffee and free WiFi, and King County Library in Sammamish, WA for an inspiring location overlooking the Olympic Mountains (and free WiFi). 
