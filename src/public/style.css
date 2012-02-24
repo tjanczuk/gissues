@@ -1,0 +1,56 @@
+body
+{
+	background-color: white;
+	padding-top: 44px;
+}
+.alert-message.block-message.gheading
+{
+	text-align: center;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.gnote
+{
+	background-color: #AAA;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+.gissueList
+{
+	min-height: 600px;
+}
+.galert-message-content 
+{
+	padding-left: 4px;
+}
+.alert-message.gerror
+{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.ginput
+{
+	height: 27px;
+}
+.center
+{
+	text-align: center;
+}
+.glikeButton
+{
+	padding: 5px;
+}
+.gissueLabel
+{
+	margin-left: 2px;
+	font-size: 0.8em;
+	text-transform: none;
+}
+.gdescription
+{
+	text-align: justify;
+}

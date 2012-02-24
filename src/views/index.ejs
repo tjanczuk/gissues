@@ -1,0 +1,122 @@
+<html>
+<head>
+	<title>gissues</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(function () {
+			var loginUrl = "https://github.com/login/oauth/authorize?"
+					+ "client_id=<%- client_id %>"
+					+ "&scope=public_repo"
+					+ "&redirect_uri=" + encodeURIComponent(window.location.href);
+			$('#login').attr('href', loginUrl);
+		});
+	</script>
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-28461947-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+</head>
+<body style="padding-top: 0px">
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<script type="text/javascript">
+	  (function() {
+	    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	    po.src = 'https://apis.google.com/js/plusone.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	  })();
+	</script>
+	<div class="container">
+		<div class="row"><span class="span16">&nbsp;</span></div>
+		<div class="row">
+			<h1 class="span16 center">Welcome to gissues</h1>
+		</div>
+		<div class="row">
+			<h3 class="span16 center">Whiteboard for GitHub issues</h3>
+		</div>		
+		<div class="row"><span class="span16 center">by <a href="https://twitter.com/#!/tjanczuk">@tjanczuk</a></span></div>
+		<div class="row"><span class="span16">&nbsp;</span></div>
+		<div class="row"><span class="span16">&nbsp;</span></div>
+		<div class="row">
+			<div class="span16 center">
+				<a id="login" href="#" class="btn large primary center">Log in with GitHub</a>
+			</div>
+		</div>
+		<div class="row"><span class="span16">&nbsp;</span></div>
+		<div class="row"><span class="span16">&nbsp;</span></div>
+		<div class="row"><span class="span16">&nbsp;</span></div>
+		<div class="row"><span class="span16">&nbsp;</span></div>
+		<div class="row">
+			<div class="span-one-third center">
+				<strong>
+					Put GitHub issues on a whiteboard
+				</strong>
+			</div>
+			<div class="span-one-third center">
+				<strong>
+					Drive SCRUM for GitHub projects
+				</strong>
+			</div>
+			<div class="span-one-third center">
+				<strong>
+					Save time
+				</strong>
+			</div>
+		</div>
+		<div class="row"><span class="span16">&nbsp;</span></div>
+		<div class="row">
+			<div class="span-one-third gdescription">
+				Manage your GitHub issues as sticky notes on a whiteboard. Drag &amp; drop issues across columns of the whiteboard to classify their status: backlog, not started, in progress, done. Order issues within a category. Filter issues by repository, labels, assignee, or people mentioned. Share permalink to the whiteboard with your team. 
+				<a href="http://github.com/tjanczuk/gissues">more...</a>
+			</div>
+			<div class="span-one-third gdescription">
+				Drive SCRUM for your GitHub project using gissues. Prioritize and order your SCRUM backlog by rearranging GitHub issues on the whiteboard. Plan an iteration by dragging issues from backlog to not started. Quickly update status of issues during daily meeting. Share permalink with a distributed team for remote access. 
+				<a href="http://github.com/tjanczuk/gissues">more...</a>
+			</div>
+			<div class="span-one-third gdescription">
+				Single GitHub issue repository with no need to keep issues or updates in sync across many applications. New issues filed in GitHub show up on the backlog. Issues closed in GitHub disappear from whiteboard. Changes to GitHub issues are reflected on whiteboard. Whiteboard status data is stored within GitHub issue itself. 
+				<a href="http://github.com/tjanczuk/gissues">more...</a>
+			</div>
+		</div>
+		<div class="row"><span class="span16">&nbsp;</span></div>
+		<div class="row">
+			<div class="span16 center">
+				<a href="http://github.com/tjanczuk/gissues" class="center">Support &amp; about</a>
+			</div>		
+		</div>
+		<div class="row">
+			<div class="span16 glikeButton">
+				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://gissues.com" data-text="whiteboard for github issues" data-via="tjanczuk" data-related="tjanczuk" data-hashtags="gissues,github,scrum">Tweet</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span16 glikeButton">
+				<div class="fb-like" data-href="http://gissues.com" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-colorscheme="dark" data-font="arial"></div>
+			</div>
+		</div>
+		<div class="row>">
+			<div class="span16 glikeButton">
+				<g:plusone size="medium" annotation="bubble" href="http://gissues.com"></g:plusone>
+			</div>
+		</div>	
+	</div>
+</body>
+</html>

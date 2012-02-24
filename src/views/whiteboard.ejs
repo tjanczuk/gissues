@@ -1,0 +1,114 @@
+<html>
+<head>
+	<title>gissues</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/themes/base/jquery-ui.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="http://static.jquery.com/ui/css/demo-docs-theme/ui.theme.css" type="text/css" media="all" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="bootstrap-dropdown.js" type="text/javascript"></script>
+	<script src="gissues.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		var options = { access_token: '<%- access_token %>'};
+	</script>
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-28461947-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+</head>
+<body>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<script type="text/javascript">
+	  (function() {
+	    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	    po.src = 'https://apis.google.com/js/plusone.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	  })();
+	</script>
+	<div class="topbar-wrapper" style="z-index: 5;">
+		<div class="topbar" data-dropdown="dropdown">
+			<div class="topbar-inner">
+				<div class="container">
+					<h3><a href="#">gissues</a></h3>
+					<form class="pull-left">
+						<select name="repo" id="repo" class="large">
+							<option value="none">&lt;repository&gt;</option>
+						</select>
+						<input class="small ginput gfilter" id="labels" name="labels" type="text" placeholder="labels">
+						<input class="small ginput gfilter" id="assignee" name="assignee" type="text" placeholder="assigned">
+						<input class="small ginput gfilter" id="mentioned" name="mentioned" type="text" placeholder="mentioned">
+						<a id="go" href="#" class="btn success small grefreshLink">Go</a>
+					</form>
+					<ul class="nav">
+	  					<li>
+							<a href="http://github.com/tjanczuk/gissues">Support</a>
+						</li>
+						<li>
+							<a href="/logout">Logout</a>
+						</li>
+					</ul>
+					<ul class="nav secondary-nav">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle">Recommend</a>
+							<ul class="dropdown-menu">
+	 							<li>
+									<a href="https://twitter.com/share" class="twitter-share-button glikeButton" data-url="http://gissues.com" data-text="whiteboard for github issues" data-via="tjanczuk" data-related="tjanczuk" data-hashtags="gissues,github,scrum">Tweet</a>
+									<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+								</li>
+			 					<li>
+									<div class="fb-like glikeButton" data-href="http://gissues.com" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-colorscheme="dark" data-font="arial"></div>
+								</li>
+								<li>
+									<div class="glikeButton">
+										<g:plusone size="medium" annotation="bubble" href="http://gissues.com"></g:plusone>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div id="gerror" class="row hide">
+			<div id="errorContainer" class="span16 alert-message gerror">
+				<p id="errorMessage" class="galert-message-content"></p>
+			</div>
+		</div>
+		<div class="row glive hide">
+			<div class="span4"><div class="alert-message block-message info gheading">Backlog</div></div>
+			<div class="span4"><div class="alert-message block-message error gheading">Not started</div></div>
+			<div class="span4"><div class="alert-message block-message warning gheading">In progess</div></div>
+			<div class="span4"><div class="alert-message block-message success gheading">Done</div></div>
+		</div>
+		<div class="row glive hide">
+			<div id="backlog" class="span4 gissueList">
+			</div>
+			<div id="notstarted" class="span4 gissueList">
+			</div>
+			<div id="inprogress" class="span4 gissueList">
+			</div>
+			<div id="done" class="span4 gissueList">
+			</div>
+		</div>
+	</div>
+</body>
+</html>

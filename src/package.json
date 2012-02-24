@@ -1,0 +1,15 @@
+{
+  "name": "gissues",
+  "description": "scrum interface for github issues",
+  "version": "0.1.0",
+  "author": "Tomasz Janczuk <tomasz@janczuk.org>",
+  "dependencies": {
+    "express": ">= 2.5.5",
+    "ejs": ">= 0.6.1"
+  },
+  "devDependencies": {
+  },
+  "keywords": ["github", "issues", "scrum", "web"],
+  "repository": "git://github.com/tjanczuk",
+  "engines": { "node": ">= 0.4.1 < 0.7.0" }
+}
