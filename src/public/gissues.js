@@ -339,7 +339,7 @@ function loadRepositories() {
 	var url = 'https://api.github.com/user/repos'
 		+ '?' + options.access_token
 		+ '&per_page=100'
-		+ '&type=public';
+		+ '&type=all';
 
 	$.ajax({
 		url: url,
@@ -383,6 +383,7 @@ function loadRepositories() {
 						if (typeof org.login === 'string') {
 							var url = 'https://api.github.com/orgs/' + org.login + '/repos'
 								+ '?' + options.access_token
+								+ '&type=all'
 								+ '&per_page=100';
 
 							$.ajax({

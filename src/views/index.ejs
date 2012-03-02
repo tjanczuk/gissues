@@ -8,9 +8,9 @@
 		$(function () {
 			var loginUrl = "https://github.com/login/oauth/authorize?"
 					+ "client_id=<%- client_id %>"
-					+ "&scope=public_repo"
 					+ "&redirect_uri=" + encodeURIComponent(window.location.href);
-			$('#login').attr('href', loginUrl);
+			$('#loginPublic').attr('href', loginUrl + '&scope=public_repo');
+			$('#loginPrivate').attr('href', loginUrl + '&scope=repo');
 		});
 	</script>
 	<script type="text/javascript">
@@ -56,10 +56,15 @@
 		<div class="row"><span class="span16">&nbsp;</span></div>
 		<div class="row">
 			<div class="span16 center">
-				<a id="login" href="#" class="btn large primary center">Log in with GitHub</a>
+				<a id="loginPrivate" href="#" class="btn large primary center">Go to my public and private repos</a>
 			</div>
 		</div>
 		<div class="row"><span class="span16">&nbsp;</span></div>
+		<div class="row">
+			<div class="span16 center">
+				<a id="loginPublic" href="#" class="btn small normal center">Go to my public repos only</a>
+			</div>
+		</div>		<div class="row"><span class="span16">&nbsp;</span></div>
 		<div class="row"><span class="span16">&nbsp;</span></div>
 		<div class="row"><span class="span16">&nbsp;</span></div>
 		<div class="row"><span class="span16">&nbsp;</span></div>
