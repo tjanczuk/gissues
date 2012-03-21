@@ -370,7 +370,7 @@ function loadRepositories() {
 				+ ', Error: ' + errorThrown);
 		},
 		success: function (data, textStatus, xhr) {
-			if (typeof data === 'object' && data.length > 0)
+			if (typeof data === 'object' && data.length >= 0)
 			{
 				targetSources += data.length;
 				if (++loadedSources === targetSources) {
