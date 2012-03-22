@@ -79,7 +79,7 @@ function updateIssues(issuesToUpdate) {
 		else {
 			var oldGissueEndIndex = issue.body.indexOf('}', oldGissueIndex);
 			if (oldGissueEndIndex === -1) {
-				entity.body = issue.body + '\rp\n' + gissue;
+				entity.body = issue.body + '\r\n' + gissue;
 			}
 			else {
 				entity.body = issue.body.substr(0, oldGissueIndex)
