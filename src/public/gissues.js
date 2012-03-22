@@ -149,7 +149,7 @@ function populateWhiteboard() {
 	clearError();
 
 	issues.sort(function (a, b) {
-		return a.order - b.order;
+		return a.gissue.order - b.gissue.order;
 	});
 	
 	for (var i in issues) {
