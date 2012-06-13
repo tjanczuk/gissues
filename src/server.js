@@ -4,7 +4,10 @@ var express = require('express')
     , cluster = require('cluster')
     , http = require('http')
     , https = require('https')
-    , config = require('./config.json')
+    , config = require('./config.json');
+
+config.client_id = process.env.GITHUB_CLIENT_ID || config.client_id;
+config.client_secret = process.env.GITHUB_CLIENT_SECRET || config.client_secret;
 
 if (!config.client_id || !config.client_secret)
     throw new Error('config.json must contain an object with client_id and client_secret properties.')

@@ -32,7 +32,7 @@
 
 If you want to run your own installation of the app similar to [http://gissues.com](http://gissues.com), you will need to:
 
-- register the URL of you application as an OAuth application with GitHub [here](https://github.com/account/applications/new),  
+- register the URL of you application as an OAuth application with GitHub [here](https://github.com/settings/applications/new),  
 - modify the src/config.json file with the client_id and client_secret value provided for your application by GitHub. 
 
 **Contributions**
