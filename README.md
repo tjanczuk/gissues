@@ -32,8 +32,10 @@
 
 If you want to run your own installation of the app similar to [http://gissues.com](http://gissues.com), you will need to:
 
-- register the URL of you application as an OAuth application with GitHub [here](https://github.com/settings/applications/new),  
-- modify the src/config.json file with the client_id and client_secret value provided for your application by GitHub. 
+- register the URL of you application as an OAuth application with GitHub [here](https://github.com/settings/applications/new). Use the root of your site for both the URL and Callback URL fields.
+- Set the GitHub OAuth client ID and secret using *one* of the following ways:
+  - Set the `GITHUB_CLIENT_ID` and `GITHUB_CLIENT_SECRET` environment variables to the right value. This is the preferred way when deploying to Azure or AppHarbor sites, so you don't have to commit secrets to your repository.
+  - modify the `src/config.json` file with the client_id and client_secret value provided for your application by GitHub.
 
 **Contributions**
 
