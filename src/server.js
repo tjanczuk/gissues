@@ -13,7 +13,7 @@ if (!config.client_id || !config.client_secret)
     throw new Error('config.json must contain an object with client_id and client_secret properties.')
 
 if (config.client_id === 'please specify client_id for OAuth here')
-    throw new Error('config.json must be updated with OAuth credentials for the application. Get them at https://github.com/account/applications/new.')
+    throw new Error('config.json must be updated with OAuth credentials for the application. Get them at https://github.com/settings/applications/new.')
 
 var app = express.createServer();
 var proxyOptions = undefined;
