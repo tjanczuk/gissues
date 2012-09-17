@@ -430,6 +430,9 @@ function onFilterApproved(event) {
 }
 
 $(function() {
+	$.ajaxSetup({
+		dataType: "json"
+	});
 	parseOptions();
 	$('.gfilter').change(onFilterChanged).keypress(onFilterApproved);
 	loadRepositories();
