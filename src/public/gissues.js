@@ -96,7 +96,7 @@ function updateIssues(issuesToUpdate) {
 			data: JSON.stringify(entity),
 			processData: false, 
 			error: function (xhr, textStatus, errorThrown) {
-				error('An error occurred when updading an issue in GitHub.'
+				error('An error occurred when updating an issue in GitHub.'
 					+ ' Status: ' + textStatus
 					+ ', Error: ' + errorThrown);
 			}
