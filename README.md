@@ -20,7 +20,7 @@
 - The service is free. 
 - The service modifies the description of your GitHub issues by adding a small textual fragment that captures gissues metadata. 
 - The service does not otherwise affect any your GitHub projects, issues, comments, wikis, etc. 
-- The service is available for public repositories only.
+- The service is available for private and public repositories.
 - It is provided as-is, use at your own risk. 
 
 **Show love**
